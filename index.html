@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <title>Eye Hospital Management System Proposal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Professional styling -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #005baa;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    nav {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #005baa;
+      font-weight: bold;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #005baa;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      color: #005baa;
+    }
+    h3 {
+      margin-top: 30px;
+      color: #005baa;
+    }
+    pre {
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      padding: 15px;
+      overflow: auto;
+      white-space: pre-wrap;
+      font-size: 0.95em;
+    }
+    .mermaid {
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #ddd;
+      color: #777;
+      font-size: 0.9em;
+    }
+    .subsection {
+      margin-bottom: 20px;
+    }
+    .content {
+      text-align: justify;
+    }
+  </style>
+  <!-- Mermaid for the flow diagram -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <!-- Cover Page -->
+    <header>
+      <!-- Replace with your logo if available -->
+      <img src="logo.png" alt="Company Logo">
+      <h1>Eye Hospital Management System Proposal</h1>
+      <p>Prepared by ProServices</p>
+      <p>Date: February 18, 2025</p>
+    </header>
+    
+    <!-- Table of Contents -->
+    <nav>
+      <ul>
+        <li><a href="#executive-summary">Executive Summary</a></li>
+        <li><a href="#project-background">Project Background</a></li>
+        <li><a href="#system-overview">System Overview</a></li>
+        <li><a href="#technical-architecture">Technical Architecture</a></li>
+        <li><a href="#ui-visualizations">UI Visualizations</a></li>
+        <li><a href="#flow-diagram">UI Flow Diagram</a></li>
+        <li><a href="#timeline">Project Timeline</a></li>
+        <li><a href="#investment">Investment &amp; Budget</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Executive Summary -->
+    <section id="executive-summary">
+      <h2>Executive Summary</h2>
+      <div class="content">
+        <p>
+          This proposal outlines the design and implementation of an advanced Eye Hospital Management System aimed at streamlining operations, enhancing patient care, and improving overall efficiency. The system integrates modules such as patient management, appointment scheduling, medical records, equipment management, and billing. Our solution provides a user-friendly interface, robust security, and scalable architecture that meets the demands of modern healthcare facilities.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Project Background -->
+    <section id="project-background">
+      <h2>Project Background &amp; Objectives</h2>
+      <div class="content">
+        <p>
+          In today’s competitive healthcare environment, efficient management of patient data, appointments, and equipment is critical. Our Eye Hospital Management System is designed to address these challenges by consolidating disparate processes into a single, cohesive platform.
+        </p>
+        <ul>
+          <li>Improve patient data accuracy and accessibility.</li>
+          <li>Streamline appointment scheduling and resource allocation.</li>
+          <li>Enhance communication among medical staff.</li>
+          <li>Ensure compliance with healthcare regulations.</li>
+          <li>Reduce operational costs through automation.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- System Overview -->
+    <section id="system-overview">
+      <h2>System Overview &amp; Modules</h2>
+      <div class="content">
+        <p>
+          The Eye Hospital Management System is divided into several key modules:
+        </p>
+        <ul>
+          <li><strong>Patient Management:</strong> Maintains comprehensive patient records including personal information, medical history, and insurance details.</li>
+          <li><strong>Appointment Management:</strong> Enables scheduling, rescheduling, and cancellation of appointments with integrated calendar views.</li>
+          <li><strong>Medical Records &amp; Eye Examinations:</strong> Captures detailed examination results, diagnoses, and treatment plans.</li>
+          <li><strong>Equipment Management:</strong> Tracks hospital equipment, maintenance schedules, and supplier information.</li>
+          <li><strong>Billing &amp; Payments:</strong> Manages invoicing, payment processing, and financial reporting.</li>
+          <li><strong>Staff Management:</strong> Oversees staff details, scheduling, and communication.</li>
+          <li><strong>Insurance Management:</strong> Manages insurance provider details and related patient coverage.</li>
+          <li><strong>Lab Tests &amp; Surgery Scheduling:</strong> Organizes lab tests, surgery bookings, and test result tracking.</li>
+          <li><strong>Reports &amp; Analytics:</strong> Provides detailed reporting and data insights.</li>
+          <li><strong>User Profile &amp; Settings:</strong> Handles user-specific configurations and profile management.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Technical Architecture -->
+    <section id="technical-architecture">
+      <h2>Technical Architecture</h2>
+      <div class="content">
+        <p>
+          The proposed system follows a modular, service-oriented architecture, with the following key components:
+        </p>
+        <ul>
+          <li><strong>Frontend:</strong> A responsive web application built using modern frameworks (e.g., React, Angular) ensuring usability across devices.</li>
+          <li><strong>Backend:</strong> RESTful API services implemented in a secure language (e.g., Node.js, Java) to handle business logic.</li>
+          <li><strong>Database:</strong> A robust MySQL database that stores all patient, appointment, and system data.</li>
+          <li><strong>Integration:</strong> Secure interfaces for third-party integrations including lab systems, insurance providers, and payment gateways.</li>
+          <li><strong>Security:</strong> Data encryption, user authentication, and audit logging to ensure HIPAA compliance and protect patient information.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- UI Visualizations -->
+    <section id="ui-visualizations">
+      <h2>UI Visualizations</h2>
+      
+      <div class="subsection">
+        <h3>Login Screen</h3>
+        <pre>
++-------------------------------------------------+
+|             Eye Hospital System               |
+|                                                 |
+|         [ Eye Hospital Logo ]                   |
+|                                                 |
+|  Username: [________________________]           |
+|  Password: [________________________]           |
+|                                                 |
+|          [           Login           ]          |
+|                                                 |
+|         [ Forgot Password? ]                    |
++-------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>Dashboard</h3>
+        <pre>
++--------------------------------------------------------------------------------+
+| Dashboard                             [User: Dr. Samer Al-Faraj]   [Logout]       |
++--------------------------------------------------------------------------------+
+|  [Patients]   [Appointments]   [Records]   [Exams]   [Equipment]   [Billing]    |
++--------------------------------------------------------------------------------+
+| Quick Stats:                                                                  |
+|   - Total Patients           : 120                                           |
+|   - Appointments Today       : 15                                            |
+|   - Pending Lab Tests        : 3                                             |
+|   - Equipment Under Maintain.: 2                                             |
++--------------------------------------------------------------------------------+
+| Notifications / Recent Activities                                             |
+|   • Ahmad Al-Khalili scheduled an appointment at 10:00 AM                      |
+|   • New lab test results available for Mariam Al-Hadid                         |
++--------------------------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>Patient Management Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Patient Management                               [Add New]   |
++--------------------------------------------------------------+
+| ID   | Name               | Gender  | DOB        | Contact     |
+|--------------------------------------------------------------|
+| 101  | Ahmad Al-Khalili   | Male    | 1980-01-01 | (555) 1234  |
+| 102  | Mariam Al-Hadid    | Female  | 1990-05-10 | (555) 5678  |
+| 103  | Omar Al-Qudah      | Male    | 1975-03-15 | (555) 9876  |
++--------------------------------------------------------------+
+| [Search Patient]                                              |
++--------------------------------------------------------------+
+        </pre>
+        <p><em>Clicking a patient opens a detailed view with tabs for Medical History, Appointments, and Prescriptions.</em></p>
+      </div>
+      
+      <div class="subsection">
+        <h3>Appointment Management Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Appointments                                    [Schedule New]|
++--------------------------------------------------------------+
+| ID   | Patient Name       | Doctor Name         | Date & Time         |
+|--------------------------------------------------------------|
+| 201  | Ahmad Al-Khalili   | Dr. Samer Al-Faraj  | 2025-03-15 10:00 AM  |
+| 202  | Mariam Al-Hadid    | Dr. Lina Al-Majali  | 2025-03-15 11:00 AM  |
+| 203  | Omar Al-Qudah      | Dr. Samer Al-Faraj  | 2025-03-16 09:30 AM  |
++--------------------------------------------------------------+
+| [Filter by Date / Doctor]                                    |
++--------------------------------------------------------------+
+        </pre>
+        <p><em>Selecting an appointment opens options to view, edit, or cancel it.</em></p>
+      </div>
+      
+      <div class="subsection">
+        <h3>Medical Records &amp; Eye Examination Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Medical Records for [Ahmad Al-Khalili]         [New Record]  |
++--------------------------------------------------------------+
+| Date       | Doctor             | Diagnosis          | Notes         |
+|--------------------------------------------------------------|
+| 2025-03-10 | Dr. Samer Al-Faraj | Myopia             | Updated lens  |
+| 2025-03-05 | Dr. Samer Al-Faraj | Astigmatism        | Prescription  |
++--------------------------------------------------------------+
+| [Tabs: General Records | Eye Examinations | Lab Tests]       |
++--------------------------------------------------------------+
+
+-- Eye Examination Details (Tab) --
++--------------------------------------------------------------+
+| [Add New Examination]                                        |
++--------------------------------------------------------------+
+| Date       : [2025-03-12]                                     |
+| Visual Acuity : [20/40]                                      |
+| Refraction   : [ -1.25 D ]                                   |
+| Intraocular Pressure : [16 mmHg]                             |
+| Diagnosis    : [Mild Myopia]                                 |
+| Notes        : [Further evaluation recommended]             |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>Equipment Management Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Equipment Inventory                           [Add Equipment]|
++--------------------------------------------------------------+
+| ID   | Equipment Name   | Model    | Status            |
+|--------------------------------------------------------------|
+| 301  | OCT Scanner      | X-200    | Operational       |
+| 302  | Fundus Camera    | F-150    | Under Maintenance |
+| 303  | Laser System     | L-300    | Operational       |
++--------------------------------------------------------------+
+| [Search / Filter by Status]                                  |
++--------------------------------------------------------------+
+        </pre>
+        <p><em>Clicking an equipment item shows detailed info and maintenance history.</em></p>
+      </div>
+      
+      <div class="subsection">
+        <h3>Billing &amp; Payments Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Billing & Payments                              [Create Invoice]|
++--------------------------------------------------------------+
+| Invoice ID | Patient Name         | Date       | Amount   | Status  |
+|--------------------------------------------------------------|
+| 401        | Ahmad Al-Khalili     | 2025-03-10 | $150.00  | Paid    |
+| 402        | Mariam Al-Hadid      | 2025-03-12 | $200.00  | Unpaid  |
+| 403        | Omar Al-Qudah        | 2025-03-13 | $180.00  | Unpaid  |
++--------------------------------------------------------------+
+| [Filter by Status / Date]                                    |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>Settings (User/Role Management) Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Settings: User & Role Management             [Add New User] |
++--------------------------------------------------------------+
+| ID   | Username       | Role           | Status              |
+|--------------------------------------------------------------|
+| 1    | dr_al_faraj    | Administrator  | Active              |
+| 2    | dr_al_faraj    | Doctor         | Active              |
+| 3    | nurse_al_hadid | Nurse          | Active              |
++--------------------------------------------------------------+
+| [Search / Filter by Role]                                    |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <!-- Additional Screens -->
+      <div class="subsection">
+        <h3>Staff Management Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Staff Management                               [Add New Staff]|
++--------------------------------------------------------------+
+| ID   | Name                | Role          | Department      | Contact    |
+|--------------------------------------------------------------|
+| 001  | Hala Al-Majali      | Nurse         | Ophthalmology   | (555) 1111 |
+| 002  | Khalid Al-Masri     | Technician    | Diagnostics     | (555) 2222 |
+| 003  | Nour Al-Hassan      | Administrator | Administration  | (555) 3333 |
++--------------------------------------------------------------+
+| [Search Staff]                                               |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>Insurance Management Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Insurance Providers                           [Add New]       |
++--------------------------------------------------------------+
+| ID   | Company Name             | Contact Person   | Phone           |
+|--------------------------------------------------------------|
+| 101  | Amman Health Insurance   | Faisal Al-Omari  | (555) 4444      |
+| 102  | Jordan MedCare           | Rana Al-Khatib   | (555) 5555      |
++--------------------------------------------------------------+
+| [Search / Filter]                                            |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>Lab Tests Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Lab Tests                                    [Order New Test] |
++--------------------------------------------------------------+
+| Test ID | Patient Name         | Test Type      | Date       | Status    |
+|--------------------------------------------------------------|
+| 301     | Ahmad Al-Khalili     | Blood Test     | 2025-03-05 | Completed |
+| 302     | Mariam Al-Hadid      | Vision Test    | 2025-03-06 | Pending   |
++--------------------------------------------------------------+
+| [Filter by Date / Test Type]                                 |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>Surgery Scheduling Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Surgery Scheduling                           [Schedule New]  |
++--------------------------------------------------------------+
+| Surgery ID | Patient Name         | Surgeon              | Date       | Status    |
+|--------------------------------------------------------------|
+| 401        | Ahmad Al-Khalili     | Dr. Samer Al-Faraj   | 2025-03-20 | Scheduled |
+| 402        | Mariam Al-Hadid      | Dr. Lina Al-Majali   | 2025-03-22 | Pending   |
++--------------------------------------------------------------+
+| [Search / Filter]                                            |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>Reports &amp; Analytics Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| Reports & Analytics                          [Generate Report]|
++--------------------------------------------------------------+
+| Report ID | Report Name       | Created Date | Status         |
+|--------------------------------------------------------------|
+| 501       | Monthly Overview  | 2025-03-01   | Available      |
+| 502       | Equipment Status  | 2025-03-05   | Available      |
++--------------------------------------------------------------+
+| [Search / Filter by Date]                                    |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+      <div class="subsection">
+        <h3>User Profile Screen</h3>
+        <pre>
++--------------------------------------------------------------+
+| User Profile                             [Edit Profile]       |
++--------------------------------------------------------------+
+| Username: dr_al_faraj                                        |
+| Role: Doctor                                                 |
+| Email: dr_al_faraj@hospital.com                              |
+| Phone: (555) 6666                                            |
+| ------------------------------------------------------------ |
+| [Change Password]                                            |
++--------------------------------------------------------------+
+        </pre>
+      </div>
+      
+    </section>
+    
+    <!-- UI Flow Diagram -->
+    <section id="flow-diagram">
+      <h2>UI Flow Diagram</h2>
+      <div class="content">
+        <p>
+          The diagram below represents the overall UI flow for the system. Ensure you have an internet connection for the Mermaid script to render the diagram.
+        </p>
+      </div>
+      <div class="mermaid">
+        flowchart TD
+            A[Login Screen] --> B[Dashboard]
+            B --> C[Patient Management]
+            B --> D[Appointment Management]
+            B --> E[Medical Records & Eye Examinations]
+            B --> F[Equipment Management]
+            B --> G[Billing & Payments]
+            B --> H[Staff Management]
+            B --> I[Insurance Management]
+            B --> J[Lab Tests]
+            B --> K[Surgery Scheduling]
+            B --> L[Reports & Analytics]
+            B --> M[User Profile & Settings]
+            
+            %% Patient Management Details
+            C --> C1[Patient List]
+            C1 --> C2[Patient Detail View]
+            
+            %% Appointment Flow
+            D --> D1[Appointment List]
+            D1 --> D2[Appointment Detail/Edit]
+            
+            %% Medical Records Flow
+            E --> E1[Record List]
+            E1 --> E2["Record Detail: Exams & Lab Tests"]
+            
+            %% Settings Flow
+            M --> M1[User & Role Management]
+      </div>
+    </section>
+    
+    <!-- Project Timeline -->
+    <section id="timeline">
+      <h2>Project Timeline</h2>
+      <div class="content">
+        <p>
+          The implementation of the Eye Hospital Management System is planned over the following phases:
+        </p>
+        <ul>
+          <li><strong>Phase 1 (Weeks 1-4):</strong> Requirements gathering, project planning, and system design.</li>
+          <li><strong>Phase 2 (Weeks 12-15):</strong> Development of core modules, UI design, and integration of backend services.</li>
+          <li><strong>Phase 3 (Weeks 1-4):</strong> System testing, user training, and initial deployment.</li>
+          <li><strong>Phase 4 (Weeks 1-3):</strong> Full-scale deployment, post-launch support.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Investment & Budget -->
+    <section id="investment">
+      <h2>Investment &amp; Budget</h2>
+      <div class="content">
+        <p>
+          The estimated cost for the development and implementation of the system is broken down as follows:
+        </p>
+        <ul>
+          <li><strong>Development &amp; Design:</strong> $75,000</li>
+          <li><strong>Hardware &amp; Infrastructure:</strong> $20,000</li>
+          <li><strong>Licensing &amp; Integration:</strong> $15,000</li>
+          <li><strong>Training &amp; Support:</strong> $10,000</li>
+        </ul>
+        <p>
+          Total Estimated Investment: <strong>$120,000</strong>
+        </p>
+      </div>
+    </section>
+    
+    <!-- Conclusion -->
+    <section id="conclusion">
+      <h2>Conclusion &amp; Next Steps</h2>
+      <div class="content">
+        <p>
+          This proposal presents a comprehensive design for an advanced Eye Hospital Management System that is user-friendly, secure, and scalable. Our solution will help streamline operations, improve patient care, and reduce overall operational costs.
+        </p>
+        <p>
+          We look forward to discussing this proposal further and tailoring the solution to meet your specific requirements. Please feel free to contact us for additional information or to schedule a demonstration.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 ProServices. All rights reserved.</p>
+      <p>Contact us: +962 799 155 039</p>
+    </footer>
+  </div>
+</body>
+</html>
