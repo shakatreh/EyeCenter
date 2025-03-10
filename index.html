@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Eye Center Hospital Management System Proposal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Professional styling -->
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -52,12 +51,15 @@
       background: #f4f4f4;
       padding-left: 10px;
       padding-right: 10px;
-      border-radius: 10px; 
+      border-radius: 5px; /* Rounded corners */
+      margin-right: 5px;
     }
     nav ul li a {
-      text-decoration: none;
       color: #005baa;
+      text-decoration: none;
       font-weight: bold;
+      padding: 8px 12px;
+      display: block;
     }
     section {
       margin-bottom: 40px;
@@ -72,6 +74,9 @@
       margin-top: 30px;
       color: #005baa;
     }
+    .content {
+      text-align: justify;
+    }
     pre {
       background: #f4f4f4;
       border: 1px solid #ddd;
@@ -79,22 +84,6 @@
       overflow: auto;
       white-space: pre-wrap;
       font-size: 0.95em;
-    }
-    .mermaid {
-      margin: 20px 0;
-    }
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      border-top: 1px solid #ddd;
-      color: #777;
-      font-size: 0.9em;
-    }
-    .subsection {
-      margin-bottom: 20px;
-    }
-    .content {
-      text-align: justify;
     }
     table {
       width: 100%;
@@ -119,14 +108,13 @@
   <div class="container">
     <!-- Cover Page -->
     <header>
-      <!-- Replace with your logo if available -->
       <img src="logo.png" alt="Company Logo">
       <h1>Eye Center Hospital Management System Proposal</h1>
       <p>Prepared by ProServices</p>
-      <p>Date: 10, Mar 2025</p>
+      <p>Date: March 10, 2025</p>
     </header>
     
-    <!-- Table of Contents -->
+    <!-- Navigation Menu -->
     <nav>
       <ul>
         <li><a href="#executive-summary">Executive Summary</a></li>
@@ -211,89 +199,87 @@
       </div>
     </section>
     
-    
     <!-- Server & Database Setup Recommendations -->
-<section id="server-recommendations">
-  <h2>Server &amp; Database Setup Recommendations</h2>
-  <div class="content">
-    <p>
-      To ensure optimal performance and reliability of the Eye Center Hospital Management System, we recommend implementing a robust hosting environment for your servers and databases. Two viable options are available:
-    </p>
-    
-    <h3>Option 1: Local Hardware (On-Premises Servers)</h3>
-    <p>
-      Deploying local hardware gives you full control over the IT infrastructure and can be beneficial if your hospital has the in‐house resources for managing a data center. Recommended specifications include:
-    </p>
-    <ul>
-      <li><strong>CPU:</strong> 8-16 cores (Xeon or equivalent)</li>
-      <li><strong>Memory:</strong> 64-128 GB RAM</li>
-      <li><strong>Storage:</strong> Enterprise-grade SSDs in RAID configuration with redundant backup solutions</li>
-      <li><strong>Network:</strong> High-speed, redundant connectivity (preferably fiber optic)</li>
-      <li><strong>Database Server:</strong> Dedicated machine with high availability and automated failover</li>
-    </ul>
-    <p>
-      <strong>Pros:</strong> Complete control over hardware, potential for lower long-term costs for fixed workloads, and enhanced data security through a private infrastructure.
-    </p>
-    <p>
-      <strong>Cons:</strong> High initial capital expenditure, ongoing maintenance responsibilities, physical space requirements, and limited scalability.
-    </p>
-    
-    <h3>Option 2: Cloud Servers (AWS or Azure)</h3>
-    <p>
-      Cloud-based solutions offer flexibility, scalability, and reduced administrative overhead. Providers like AWS and Azure allow you to leverage managed services with a pay‑as‑you‑go model. Recommended specifications include:
-    </p>
-    <ul>
-      <li><strong>Instance Type:</strong> AWS EC2 m5.xlarge or Azure Standard_D4s_v3 (approximately 4 vCPUs, 16GB RAM for small-to-medium deployments)</li>
-      <li><strong>Storage:</strong> High-performance EBS Provisioned IOPS SSD or Azure Premium SSD</li>
-      <li><strong>Database Services:</strong> Managed offerings such as Amazon RDS or Azure Database with automated backups and high availability</li>
-      <li><strong>Networking:</strong> Configured with load balancing, auto-scaling, and secure Virtual Private Cloud (VPC) environments</li>
-    </ul>
-    <p>
-      <strong>Pros:</strong> Excellent scalability, lower upfront costs with a flexible pricing model, high availability, and reduced maintenance due to managed services.
-    </p>
-    <p>
-      <strong>Cons:</strong> Recurring operational expenses, dependence on the cloud provider, potential data sovereignty concerns, and occasional performance variations due to multi-tenancy.
-    </p>
-    
-    <h3>Comparison Summary</h3>
-    <table>
-      <tr>
-        <th>Criteria</th>
-        <th>Local Hardware</th>
-        <th>Cloud Servers</th>
-      </tr>
-      <tr>
-        <td>Initial Investment</td>
-        <td>High upfront cost</td>
-        <td>Low upfront cost, pay-as-you-go</td>
-      </tr>
-      <tr>
-        <td>Scalability</td>
-        <td>Limited</td>
-        <td>Highly scalable</td>
-      </tr>
-      <tr>
-        <td>Maintenance</td>
-        <td>In-house maintenance required</td>
-        <td>Managed services with lower overhead</td>
-      </tr>
-      <tr>
-        <td>Control</td>
-        <td>Complete control</td>
-        <td>Less direct control</td>
-      </tr>
-      <tr>
-        <td>Data Security</td>
-        <td>Enhanced security via private infrastructure</td>
-        <td>Robust security features, though in a shared environment</td>
-      </tr>
-    </table>
-    <p>
-      Based on the operational requirements and strategic goals of Eye Center Hospital, we recommend carefully evaluating both options. For hospitals requiring rapid scalability and reduced management overhead, a cloud-based solution (AWS or Azure) may be optimal. Conversely, if complete control over the IT environment is preferred and future growth is predictable, investing in local hardware can be a sound decision.
-    </p>
-  </div>
-</section>
-
+    <section id="server-recommendations">
+      <h2>Server &amp; Database Setup Recommendations</h2>
+      <div class="content">
+        <p>
+          To ensure optimal performance and reliability of the Eye Center Hospital Management System, we recommend implementing a robust hosting environment for your servers and databases. Two viable options are available:
+        </p>
+        
+        <h3>Option 1: Local Hardware (On-Premises Servers)</h3>
+        <p>
+          Deploying local hardware gives you full control over the IT infrastructure and can be beneficial if your hospital has the in‐house resources for managing a data center. Recommended specifications include:
+        </p>
+        <ul>
+          <li><strong>CPU:</strong> 8-16 cores (Xeon or equivalent)</li>
+          <li><strong>Memory:</strong> 64-128 GB RAM</li>
+          <li><strong>Storage:</strong> Enterprise-grade SSDs in RAID configuration with redundant backup solutions</li>
+          <li><strong>Network:</strong> High-speed, redundant connectivity (preferably fiber optic)</li>
+          <li><strong>Database Server:</strong> Dedicated machine with high availability and automated failover</li>
+        </ul>
+        <p>
+          <strong>Pros:</strong> Complete control over hardware, potential for lower long-term costs for fixed workloads, and enhanced data security through a private infrastructure.
+        </p>
+        <p>
+          <strong>Cons:</strong> High initial capital expenditure, ongoing maintenance responsibilities, physical space requirements, and limited scalability.
+        </p>
+        
+        <h3>Option 2: Cloud Servers (AWS or Azure)</h3>
+        <p>
+          Cloud-based solutions offer flexibility, scalability, and reduced administrative overhead. Providers like AWS and Azure allow you to leverage managed services with a pay‑as‑you‑go model. Recommended specifications include:
+        </p>
+        <ul>
+          <li><strong>Instance Type:</strong> AWS EC2 m5.xlarge or Azure Standard_D4s_v3 (approximately 4 vCPUs, 16GB RAM for small-to-medium deployments)</li>
+          <li><strong>Storage:</strong> High-performance EBS Provisioned IOPS SSD or Azure Premium SSD</li>
+          <li><strong>Database Services:</strong> Managed offerings such as Amazon RDS or Azure Database with automated backups and high availability</li>
+          <li><strong>Networking:</strong> Configured with load balancing, auto-scaling, and secure Virtual Private Cloud (VPC) environments</li>
+        </ul>
+        <p>
+          <strong>Pros:</strong> Excellent scalability, lower upfront costs with a flexible pricing model, high availability, and reduced maintenance due to managed services.
+        </p>
+        <p>
+          <strong>Cons:</strong> Recurring operational expenses, dependence on the cloud provider, potential data sovereignty concerns, and occasional performance variations due to multi-tenancy.
+        </p>
+        
+        <h3>Comparison Summary</h3>
+        <table>
+          <tr>
+            <th>Criteria</th>
+            <th>Local Hardware</th>
+            <th>Cloud Servers</th>
+          </tr>
+          <tr>
+            <td>Initial Investment</td>
+            <td>High upfront cost</td>
+            <td>Low upfront cost, pay-as-you-go</td>
+          </tr>
+          <tr>
+            <td>Scalability</td>
+            <td>Limited</td>
+            <td>Highly scalable</td>
+          </tr>
+          <tr>
+            <td>Maintenance</td>
+            <td>In-house maintenance required</td>
+            <td>Managed services with lower overhead</td>
+          </tr>
+          <tr>
+            <td>Control</td>
+            <td>Complete control</td>
+            <td>Less direct control</td>
+          </tr>
+          <tr>
+            <td>Data Security</td>
+            <td>Enhanced security via private infrastructure</td>
+            <td>Robust security features, though in a shared environment</td>
+          </tr>
+        </table>
+        <p>
+          Based on the operational requirements and strategic goals of Eye Center Hospital, we recommend carefully evaluating both options. For hospitals requiring rapid scalability and reduced management overhead, a cloud-based solution (AWS or Azure) may be optimal. Conversely, if complete control over the IT environment is preferred and future growth is predictable, investing in local hardware can be a sound decision.
+        </p>
+      </div>
+    </section>
     
     <!-- Anticipated Work Plan -->
     <section id="work-plan">
@@ -337,8 +323,7 @@
     <!-- UI Visualizations -->
     <section id="ui-visualizations">
       <h2>UI Visualizations</h2>
-      
-      <div class="subsection">
+      <div class="content">
         <h3>Login Screen</h3>
         <pre>
 +-------------------------------------------------+
@@ -355,8 +340,7 @@
 +-------------------------------------------------+
         </pre>
       </div>
-      
-      <div class="subsection">
+      <div class="content">
         <h3>Dashboard</h3>
         <pre>
 +--------------------------------------------------------------------------------+
@@ -375,8 +359,7 @@
 +--------------------------------------------------------------------------------+
         </pre>
       </div>
-      
-      <div class="subsection">
+      <div class="content">
         <h3>Patient Management Screen</h3>
         <pre>
 +--------------------------------------------------------------+
@@ -407,26 +390,20 @@
         flowchart TD
             A[Login Screen] --> B[Dashboard]
             B --> C[Patient Management]
+            C --> C1[Patient List]
+            C1 --> C2[Patient Detail View]
             B --> D[Appointment Scheduling]
+            D --> D1[Appointment List]
+            D1 --> D2[Appointment Detail/Edit]
             B --> E[Medical Records & Diagnostics]
+            E --> E1[Diagnostic Records]
+            E1 --> E2[Record Detail]
             B --> F[Equipment Management]
             B --> G[Billing & Payments]
             B --> H[Staff Administration]
             B --> I[Insurance & Claims]
             B --> J[Reports & Analytics]
             B --> K[User Profile & Settings]
-            
-            %% Patient Management Details
-            C --> C1[Patient List]
-            C1 --> C2[Patient Detail View]
-            
-            %% Appointment Flow
-            D --> D1[Appointment List]
-            D1 --> D2[Appointment Detail/Edit]
-            
-            %% Diagnostic Flow
-            E --> E1[Diagnostic Records]
-            E1 --> E2[Record Detail]
       </div>
     </section>
     
@@ -484,10 +461,25 @@
       <h2>Terms &amp; Conditions</h2>
       <div class="content">
         <p>
-          <strong>Price Terms:</strong> All prices are in USD and exclusive of VAT and import duties. Final costs are subject to change based on additional requirements and scope adjustments.
+          <strong>Price Terms:</strong> All prices are in USD and exclusive of VAT and import duties.
         </p>
         <p>
-          <strong>Implementation:</strong> The project implementation will adhere to the agreed work plan and timeline. Any delays due to external factors will be communicated promptly.
+          <strong>Payment Terms:</strong>
+        </p>
+        <ul>
+          <li>50% down payment upon official agreement.</li>
+          <li>30% payment upon implementation of the system.</li>
+          <li>20% payment after successful testing and acceptance.</li>
+        </ul>
+        <p>
+          <strong>Additional Charges:</strong>
+        </p>
+        <ul>
+          <li>If the training duration exceeds the planned schedule, an additional charge of $250 per day will apply.</li>
+          <li>The hospital will cover all costs related to developer travel, accommodation, and transportation.</li>
+        </ul>
+        <p>
+          <strong>Implementation:</strong> The project will be implemented as per the agreed work plan and timeline. Any delays due to external factors will be communicated promptly.
         </p>
         <p>
           <strong>Warranty &amp; Support:</strong> A standard warranty period of 3 months is provided from the system implementation date, covering software bug fixes and technical support. Ongoing maintenance will be available under an annual service agreement.
@@ -536,7 +528,7 @@
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 ProServices. All rights reserved.</p>
-      <p>Contact us: ProServices</p>
+      <p>Contact us: ProCervices</p>
     </footer>
   </div>
 </body>
