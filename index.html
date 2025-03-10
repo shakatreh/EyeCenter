@@ -2,7 +2,7 @@
 <html lang="en">
 <head> 
   <meta charset="UTF-8">
-  <title>Eye Hospital Management System Proposal</title>
+  <title>Eye Center Hospital Management System Proposal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Professional styling -->
   <style>
@@ -48,7 +48,7 @@
     }
     nav ul li {
       display: inline-block;
-      margin: 0 15px;
+      margin: 0 10px;
     }
     nav ul li a {
       text-decoration: none;
@@ -92,6 +92,18 @@
     .content {
       text-align: justify;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
   </style>
   <!-- Mermaid for the flow diagram -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
@@ -105,23 +117,26 @@
     <header>
       <!-- Replace with your logo if available -->
       <img src="logo.png" alt="Company Logo">
-      <h1>Eye Hospital Management System Proposal</h1>
+      <h1>Eye Center Hospital Management System Proposal</h1>
       <p>Prepared by ProServices</p>
-      <p>Date: February 18, 2025</p>
+      <p>Date: 10, Mar 2025</p>
     </header>
     
     <!-- Table of Contents -->
     <nav>
       <ul>
         <li><a href="#executive-summary">Executive Summary</a></li>
-        <li><a href="#project-background">Project Background</a></li>
-        <li><a href="#system-overview">System Overview</a></li>
+        <li><a href="#project-background">Project Background &amp; Objectives</a></li>
+        <li><a href="#system-overview">System Overview &amp; Modules</a></li>
         <li><a href="#technical-architecture">Technical Architecture</a></li>
+        <li><a href="#work-plan">Anticipated Work Plan</a></li>
         <li><a href="#ui-visualizations">UI Visualizations</a></li>
         <li><a href="#flow-diagram">UI Flow Diagram</a></li>
         <li><a href="#timeline">Project Timeline</a></li>
-        <li><a href="#investment">Investment &amp; Budget</a></li>
-        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#investment">Investment &amp; Detailed Cost Summary</a></li>
+        <li><a href="#terms">Terms &amp; Conditions</a></li>
+        <li><a href="#agreement">Agreement</a></li>
+        <li><a href="#conclusion">Conclusion &amp; Next Steps</a></li>
       </ul>
     </nav>
     
@@ -130,46 +145,46 @@
       <h2>Executive Summary</h2>
       <div class="content">
         <p>
-          This proposal outlines the design and implementation of an advanced Eye Hospital Management System aimed at streamlining operations, enhancing patient care, and improving overall efficiency. The system integrates modules such as patient management, appointment scheduling, medical records, equipment management, and billing. Our solution provides a user-friendly interface, robust security, and scalable architecture that meets the demands of modern healthcare facilities.
+          This proposal outlines the design and implementation of an advanced management system for Eye Center Hospital. Our integrated solution is designed to streamline hospital operations, enhance patient care, and improve overall efficiency. The system encompasses modules such as patient management, appointment scheduling, electronic medical records, diagnostic imaging, equipment management, billing, and staff administration. In addition to a robust technical architecture and intuitive user interface, this proposal includes a comprehensive work plan, detailed cost summary, and clear terms of engagement.
         </p>
       </div>
     </section>
     
-    <!-- Project Background -->
+    <!-- Project Background & Objectives -->
     <section id="project-background">
       <h2>Project Background &amp; Objectives</h2>
       <div class="content">
         <p>
-          In today’s competitive healthcare environment, efficient management of patient data, appointments, and equipment is critical. Our Eye Hospital Management System is designed to address these challenges by consolidating disparate processes into a single, cohesive platform.
+          In today’s dynamic healthcare environment, efficient management of patient data, appointments, diagnostics, and hospital resources is paramount. Eye Center Hospital faces challenges in consolidating these functions into a single, cohesive system. This proposal aims to address these challenges by implementing an integrated management system that will:
         </p>
         <ul>
-          <li>Improve patient data accuracy and accessibility.</li>
-          <li>Streamline appointment scheduling and resource allocation.</li>
-          <li>Enhance communication among medical staff.</li>
-          <li>Ensure compliance with healthcare regulations.</li>
-          <li>Reduce operational costs through automation.</li>
+          <li>Enhance accuracy and accessibility of patient information.</li>
+          <li>Streamline appointment scheduling and diagnostic processes.</li>
+          <li>Improve communication among clinical and administrative staff.</li>
+          <li>Ensure compliance with healthcare regulations and standards.</li>
+          <li>Optimize resource allocation and reduce operational costs.</li>
         </ul>
       </div>
     </section>
     
-    <!-- System Overview -->
+    <!-- System Overview & Modules -->
     <section id="system-overview">
       <h2>System Overview &amp; Modules</h2>
       <div class="content">
         <p>
-          The Eye Hospital Management System is divided into several key modules:
+          The Eye Center Hospital Management System is designed as a modular, scalable platform that integrates the following key components:
         </p>
         <ul>
-          <li><strong>Patient Management:</strong> Maintains comprehensive patient records including personal information, medical history, and insurance details.</li>
-          <li><strong>Appointment Management:</strong> Enables scheduling, rescheduling, and cancellation of appointments with integrated calendar views.</li>
-          <li><strong>Medical Records &amp; Eye Examinations:</strong> Captures detailed examination results, diagnoses, and treatment plans.</li>
-          <li><strong>Equipment Management:</strong> Tracks hospital equipment, maintenance schedules, and supplier information.</li>
-          <li><strong>Billing &amp; Payments:</strong> Manages invoicing, payment processing, and financial reporting.</li>
-          <li><strong>Staff Management:</strong> Oversees staff details, scheduling, and communication.</li>
-          <li><strong>Insurance Management:</strong> Manages insurance provider details and related patient coverage.</li>
-          <li><strong>Lab Tests &amp; Surgery Scheduling:</strong> Organizes lab tests, surgery bookings, and test result tracking.</li>
-          <li><strong>Reports &amp; Analytics:</strong> Provides detailed reporting and data insights.</li>
-          <li><strong>User Profile &amp; Settings:</strong> Handles user-specific configurations and profile management.</li>
+          <li><strong>Patient Management:</strong> Comprehensive patient records including demographics, medical history, and treatment plans.</li>
+          <li><strong>Appointment Scheduling:</strong> Efficient booking, rescheduling, and cancellation of patient appointments with calendar integration.</li>
+          <li><strong>Electronic Medical Records (EMR):</strong> Secure storage and retrieval of patient diagnostic data, treatment notes, and imaging results.</li>
+          <li><strong>Diagnostic Imaging &amp; Lab Management:</strong> Integration with diagnostic devices and lab systems for streamlined reporting.</li>
+          <li><strong>Equipment &amp; Asset Management:</strong> Tracking and maintenance scheduling for hospital equipment and diagnostic tools.</li>
+          <li><strong>Billing &amp; Payments:</strong> Automated invoicing, payment processing, and financial reporting.</li>
+          <li><strong>Staff &amp; Administration:</strong> Management of staff profiles, scheduling, and internal communications.</li>
+          <li><strong>Insurance &amp; Claims Management:</strong> Coordination with insurance providers to manage patient coverage and claims.</li>
+          <li><strong>Reports &amp; Analytics:</strong> Comprehensive reporting tools to provide insights on hospital performance and patient outcomes.</li>
+          <li><strong>User Profile &amp; Settings:</strong> Customizable user interfaces and role-based access controls.</li>
         </ul>
       </div>
     </section>
@@ -179,15 +194,138 @@
       <h2>Technical Architecture</h2>
       <div class="content">
         <p>
-          The proposed system follows a modular, service-oriented architecture, with the following key components:
+          The proposed system leverages a modern, service-oriented architecture with the following key components:
         </p>
         <ul>
-          <li><strong>Frontend:</strong> A responsive web application built using modern frameworks (e.g., React, Angular) ensuring usability across devices.</li>
-          <li><strong>Backend:</strong> RESTful API services implemented in a secure language (e.g., Node.js, Java) to handle business logic.</li>
-          <li><strong>Database:</strong> A robust MySQL database that stores all patient, appointment, and system data.</li>
-          <li><strong>Integration:</strong> Secure interfaces for third-party integrations including lab systems, insurance providers, and payment gateways.</li>
-          <li><strong>Security:</strong> Data encryption, user authentication, and audit logging to ensure HIPAA compliance and protect patient information.</li>
+          <li><strong>Frontend:</strong> A responsive web application built using contemporary frameworks ensuring compatibility across devices.</li>
+          <li><strong>Backend:</strong> RESTful API services developed with robust and secure technologies to manage business logic.</li>
+          <li><strong>Database:</strong> A secure and scalable database system (e.g., MySQL, PostgreSQL) for storing all operational data.</li>
+          <li><strong>Integration:</strong> Interfaces for third-party systems including diagnostic devices, insurance services, and payment gateways.</li>
+          <li><strong>Security:</strong> Advanced encryption, authentication mechanisms, and audit logs to protect sensitive patient data.</li>
         </ul>
+      </div>
+    </section>
+    
+    
+    <!-- Server & Database Setup Recommendations -->
+<section id="server-recommendations">
+  <h2>Server &amp; Database Setup Recommendations</h2>
+  <div class="content">
+    <p>
+      To ensure optimal performance and reliability of the Eye Center Hospital Management System, we recommend implementing a robust hosting environment for your servers and databases. Two viable options are available:
+    </p>
+    
+    <h3>Option 1: Local Hardware (On-Premises Servers)</h3>
+    <p>
+      Deploying local hardware gives you full control over the IT infrastructure and can be beneficial if your hospital has the in‐house resources for managing a data center. Recommended specifications include:
+    </p>
+    <ul>
+      <li><strong>CPU:</strong> 8-16 cores (Xeon or equivalent)</li>
+      <li><strong>Memory:</strong> 64-128 GB RAM</li>
+      <li><strong>Storage:</strong> Enterprise-grade SSDs in RAID configuration with redundant backup solutions</li>
+      <li><strong>Network:</strong> High-speed, redundant connectivity (preferably fiber optic)</li>
+      <li><strong>Database Server:</strong> Dedicated machine with high availability and automated failover</li>
+    </ul>
+    <p>
+      <strong>Pros:</strong> Complete control over hardware, potential for lower long-term costs for fixed workloads, and enhanced data security through a private infrastructure.
+    </p>
+    <p>
+      <strong>Cons:</strong> High initial capital expenditure, ongoing maintenance responsibilities, physical space requirements, and limited scalability.
+    </p>
+    
+    <h3>Option 2: Cloud Servers (AWS or Azure)</h3>
+    <p>
+      Cloud-based solutions offer flexibility, scalability, and reduced administrative overhead. Providers like AWS and Azure allow you to leverage managed services with a pay‑as‑you‑go model. Recommended specifications include:
+    </p>
+    <ul>
+      <li><strong>Instance Type:</strong> AWS EC2 m5.xlarge or Azure Standard_D4s_v3 (approximately 4 vCPUs, 16GB RAM for small-to-medium deployments)</li>
+      <li><strong>Storage:</strong> High-performance EBS Provisioned IOPS SSD or Azure Premium SSD</li>
+      <li><strong>Database Services:</strong> Managed offerings such as Amazon RDS or Azure Database with automated backups and high availability</li>
+      <li><strong>Networking:</strong> Configured with load balancing, auto-scaling, and secure Virtual Private Cloud (VPC) environments</li>
+    </ul>
+    <p>
+      <strong>Pros:</strong> Excellent scalability, lower upfront costs with a flexible pricing model, high availability, and reduced maintenance due to managed services.
+    </p>
+    <p>
+      <strong>Cons:</strong> Recurring operational expenses, dependence on the cloud provider, potential data sovereignty concerns, and occasional performance variations due to multi-tenancy.
+    </p>
+    
+    <h3>Comparison Summary</h3>
+    <table>
+      <tr>
+        <th>Criteria</th>
+        <th>Local Hardware</th>
+        <th>Cloud Servers</th>
+      </tr>
+      <tr>
+        <td>Initial Investment</td>
+        <td>High upfront cost</td>
+        <td>Low upfront cost, pay-as-you-go</td>
+      </tr>
+      <tr>
+        <td>Scalability</td>
+        <td>Limited</td>
+        <td>Highly scalable</td>
+      </tr>
+      <tr>
+        <td>Maintenance</td>
+        <td>In-house maintenance required</td>
+        <td>Managed services with lower overhead</td>
+      </tr>
+      <tr>
+        <td>Control</td>
+        <td>Complete control</td>
+        <td>Less direct control</td>
+      </tr>
+      <tr>
+        <td>Data Security</td>
+        <td>Enhanced security via private infrastructure</td>
+        <td>Robust security features, though in a shared environment</td>
+      </tr>
+    </table>
+    <p>
+      Based on the operational requirements and strategic goals of Eye Center Hospital, we recommend carefully evaluating both options. For hospitals requiring rapid scalability and reduced management overhead, a cloud-based solution (AWS or Azure) may be optimal. Conversely, if complete control over the IT environment is preferred and future growth is predictable, investing in local hardware can be a sound decision.
+    </p>
+  </div>
+</section>
+
+    
+    <!-- Anticipated Work Plan -->
+    <section id="work-plan">
+      <h2>Anticipated Work Plan</h2>
+      <div class="content">
+        <p>
+          Our implementation approach is designed to ensure a smooth transition from existing systems to the new integrated platform. The key phases include:
+        </p>
+        <ul>
+          <li><strong>Phase 1 – Requirements &amp; Design (Weeks 1-4):</strong>
+            <ul>
+              <li>Conduct stakeholder meetings and detailed requirements gathering.</li>
+              <li>Develop system design documents, workflow diagrams, and perform gap analysis.</li>
+            </ul>
+          </li>
+          <li><strong>Phase 2 – Development &amp; Integration (Weeks 5-12):</strong>
+            <ul>
+              <li>Develop core modules and integrate third-party systems.</li>
+              <li>Implement user interface designs and backend services.</li>
+            </ul>
+          </li>
+          <li><strong>Phase 3 – Testing &amp; Training (Weeks 13-16):</strong>
+            <ul>
+              <li>Conduct comprehensive system and user acceptance testing (UAT).</li>
+              <li>Provide training sessions for clinical and administrative staff.</li>
+            </ul>
+          </li>
+          <li><strong>Phase 4 – Pilot &amp; Go Live (Weeks 17-20):</strong>
+            <ul>
+              <li>Deploy a pilot version in select departments.</li>
+              <li>Gather feedback, fine-tune functionalities, and complete full-scale deployment.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          <em>Key Assumptions:</em> Timely stakeholder input, availability of necessary hardware, and adherence to the outlined schedule.
+        </p>
       </div>
     </section>
     
@@ -199,9 +337,9 @@
         <h3>Login Screen</h3>
         <pre>
 +-------------------------------------------------+
-|             Eye Hospital System               |
+|         Eye Center Management System            |
 |                                                 |
-|         [ Eye Hospital Logo ]                   |
+|         [ Eye Center Logo ]                     |
 |                                                 |
 |  Username: [________________________]           |
 |  Password: [________________________]           |
@@ -217,19 +355,18 @@
         <h3>Dashboard</h3>
         <pre>
 +--------------------------------------------------------------------------------+
-| Dashboard                             [User: Dr. Samer Al-Faraj]   [Logout]       |
+| Dashboard                             [User: Dr. Jane Doe]   [Logout]              |
 +--------------------------------------------------------------------------------+
-|  [Patients]   [Appointments]   [Records]   [Exams]   [Equipment]   [Billing]    |
+|  [Patients]   [Appointments]   [Diagnostics]   [Equipment]   [Billing]   [Reports]|
 +--------------------------------------------------------------------------------+
 | Quick Stats:                                                                  |
-|   - Total Patients           : 120                                           |
-|   - Appointments Today       : 15                                            |
-|   - Pending Lab Tests        : 3                                             |
-|   - Equipment Under Maintain.: 2                                             |
+|   - Total Patients           : 150                                           |
+|   - Appointments Today       : 20                                            |
+|   - Pending Diagnostics      : 5                                             |
 +--------------------------------------------------------------------------------+
 | Notifications / Recent Activities                                             |
-|   • Ahmad Al-Khalili scheduled an appointment at 10:00 AM                      |
-|   • New lab test results available for Mariam Al-Hadid                         |
+|   • John Smith booked an appointment at 09:00 AM                               |
+|   • New diagnostic report available for Alice Johnson                        |
 +--------------------------------------------------------------------------------+
         </pre>
       </div>
@@ -242,212 +379,15 @@
 +--------------------------------------------------------------+
 | ID   | Name               | Gender  | DOB        | Contact     |
 |--------------------------------------------------------------|
-| 101  | Ahmad Al-Khalili   | Male    | 1980-01-01 | (555) 1234  |
-| 102  | Mariam Al-Hadid    | Female  | 1990-05-10 | (555) 5678  |
-| 103  | Omar Al-Qudah      | Male    | 1975-03-15 | (555) 9876  |
+| 101  | John Smith         | Male    | 1985-04-12 | (555) 1234  |
+| 102  | Alice Johnson      | Female  | 1990-08-22 | (555) 5678  |
+| 103  | Robert Brown       | Male    | 1978-11-30 | (555) 9876  |
 +--------------------------------------------------------------+
 | [Search Patient]                                              |
 +--------------------------------------------------------------+
         </pre>
-        <p><em>Clicking a patient opens a detailed view with tabs for Medical History, Appointments, and Prescriptions.</em></p>
+        <p><em>Clicking a patient opens detailed records including medical history, appointments, and diagnostic results.</em></p>
       </div>
-      
-      <div class="subsection">
-        <h3>Appointment Management Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Appointments                                    [Schedule New]|
-+--------------------------------------------------------------+
-| ID   | Patient Name       | Doctor Name         | Date & Time         |
-|--------------------------------------------------------------|
-| 201  | Ahmad Al-Khalili   | Dr. Samer Al-Faraj  | 2025-03-15 10:00 AM  |
-| 202  | Mariam Al-Hadid    | Dr. Lina Al-Majali  | 2025-03-15 11:00 AM  |
-| 203  | Omar Al-Qudah      | Dr. Samer Al-Faraj  | 2025-03-16 09:30 AM  |
-+--------------------------------------------------------------+
-| [Filter by Date / Doctor]                                    |
-+--------------------------------------------------------------+
-        </pre>
-        <p><em>Selecting an appointment opens options to view, edit, or cancel it.</em></p>
-      </div>
-      
-      <div class="subsection">
-        <h3>Medical Records &amp; Eye Examination Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Medical Records for [Ahmad Al-Khalili]         [New Record]  |
-+--------------------------------------------------------------+
-| Date       | Doctor             | Diagnosis          | Notes         |
-|--------------------------------------------------------------|
-| 2025-03-10 | Dr. Samer Al-Faraj | Myopia             | Updated lens  |
-| 2025-03-05 | Dr. Samer Al-Faraj | Astigmatism        | Prescription  |
-+--------------------------------------------------------------+
-| [Tabs: General Records | Eye Examinations | Lab Tests]       |
-+--------------------------------------------------------------+
-
--- Eye Examination Details (Tab) --
-+--------------------------------------------------------------+
-| [Add New Examination]                                        |
-+--------------------------------------------------------------+
-| Date       : [2025-03-12]                                     |
-| Visual Acuity : [20/40]                                      |
-| Refraction   : [ -1.25 D ]                                   |
-| Intraocular Pressure : [16 mmHg]                             |
-| Diagnosis    : [Mild Myopia]                                 |
-| Notes        : [Further evaluation recommended]             |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
-      <div class="subsection">
-        <h3>Equipment Management Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Equipment Inventory                           [Add Equipment]|
-+--------------------------------------------------------------+
-| ID   | Equipment Name   | Model    | Status            |
-|--------------------------------------------------------------|
-| 301  | OCT Scanner      | X-200    | Operational       |
-| 302  | Fundus Camera    | F-150    | Under Maintenance |
-| 303  | Laser System     | L-300    | Operational       |
-+--------------------------------------------------------------+
-| [Search / Filter by Status]                                  |
-+--------------------------------------------------------------+
-        </pre>
-        <p><em>Clicking an equipment item shows detailed info and maintenance history.</em></p>
-      </div>
-      
-      <div class="subsection">
-        <h3>Billing &amp; Payments Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Billing & Payments                              [Create Invoice]|
-+--------------------------------------------------------------+
-| Invoice ID | Patient Name         | Date       | Amount   | Status  |
-|--------------------------------------------------------------|
-| 401        | Ahmad Al-Khalili     | 2025-03-10 | $150.00  | Paid    |
-| 402        | Mariam Al-Hadid      | 2025-03-12 | $200.00  | Unpaid  |
-| 403        | Omar Al-Qudah        | 2025-03-13 | $180.00  | Unpaid  |
-+--------------------------------------------------------------+
-| [Filter by Status / Date]                                    |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
-      <div class="subsection">
-        <h3>Settings (User/Role Management) Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Settings: User & Role Management             [Add New User] |
-+--------------------------------------------------------------+
-| ID   | Username       | Role           | Status              |
-|--------------------------------------------------------------|
-| 1    | dr_al_faraj    | Administrator  | Active              |
-| 2    | dr_al_faraj    | Doctor         | Active              |
-| 3    | nurse_al_hadid | Nurse          | Active              |
-+--------------------------------------------------------------+
-| [Search / Filter by Role]                                    |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
-      <!-- Additional Screens -->
-      <div class="subsection">
-        <h3>Staff Management Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Staff Management                               [Add New Staff]|
-+--------------------------------------------------------------+
-| ID   | Name                | Role          | Department      | Contact    |
-|--------------------------------------------------------------|
-| 001  | Hala Al-Majali      | Nurse         | Ophthalmology   | (555) 1111 |
-| 002  | Khalid Al-Masri     | Technician    | Diagnostics     | (555) 2222 |
-| 003  | Nour Al-Hassan      | Administrator | Administration  | (555) 3333 |
-+--------------------------------------------------------------+
-| [Search Staff]                                               |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
-      <div class="subsection">
-        <h3>Insurance Management Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Insurance Providers                           [Add New]       |
-+--------------------------------------------------------------+
-| ID   | Company Name             | Contact Person   | Phone           |
-|--------------------------------------------------------------|
-| 101  | Amman Health Insurance   | Faisal Al-Omari  | (555) 4444      |
-| 102  | Jordan MedCare           | Rana Al-Khatib   | (555) 5555      |
-+--------------------------------------------------------------+
-| [Search / Filter]                                            |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
-      <div class="subsection">
-        <h3>Lab Tests Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Lab Tests                                    [Order New Test] |
-+--------------------------------------------------------------+
-| Test ID | Patient Name         | Test Type      | Date       | Status    |
-|--------------------------------------------------------------|
-| 301     | Ahmad Al-Khalili     | Blood Test     | 2025-03-05 | Completed |
-| 302     | Mariam Al-Hadid      | Vision Test    | 2025-03-06 | Pending   |
-+--------------------------------------------------------------+
-| [Filter by Date / Test Type]                                 |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
-      <div class="subsection">
-        <h3>Surgery Scheduling Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Surgery Scheduling                           [Schedule New]  |
-+--------------------------------------------------------------+
-| Surgery ID | Patient Name         | Surgeon              | Date       | Status    |
-|--------------------------------------------------------------|
-| 401        | Ahmad Al-Khalili     | Dr. Samer Al-Faraj   | 2025-03-20 | Scheduled |
-| 402        | Mariam Al-Hadid      | Dr. Lina Al-Majali   | 2025-03-22 | Pending   |
-+--------------------------------------------------------------+
-| [Search / Filter]                                            |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
-      <div class="subsection">
-        <h3>Reports &amp; Analytics Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| Reports & Analytics                          [Generate Report]|
-+--------------------------------------------------------------+
-| Report ID | Report Name       | Created Date | Status         |
-|--------------------------------------------------------------|
-| 501       | Monthly Overview  | 2025-03-01   | Available      |
-| 502       | Equipment Status  | 2025-03-05   | Available      |
-+--------------------------------------------------------------+
-| [Search / Filter by Date]                                    |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
-      <div class="subsection">
-        <h3>User Profile Screen</h3>
-        <pre>
-+--------------------------------------------------------------+
-| User Profile                             [Edit Profile]       |
-+--------------------------------------------------------------+
-| Username: dr_al_faraj                                        |
-| Role: Doctor                                                 |
-| Email: dr_al_faraj@hospital.com                              |
-| Phone: (555) 6666                                            |
-| ------------------------------------------------------------ |
-| [Change Password]                                            |
-+--------------------------------------------------------------+
-        </pre>
-      </div>
-      
     </section>
     
     <!-- UI Flow Diagram -->
@@ -455,23 +395,21 @@
       <h2>UI Flow Diagram</h2>
       <div class="content">
         <p>
-          The diagram below represents the overall UI flow for the system. Ensure you have an internet connection for the Mermaid script to render the diagram.
+          The diagram below illustrates the overall UI flow of the system. Ensure you have an active internet connection for the Mermaid script to render the diagram.
         </p>
       </div>
       <div class="mermaid">
         flowchart TD
             A[Login Screen] --> B[Dashboard]
             B --> C[Patient Management]
-            B --> D[Appointment Management]
-            B --> E[Medical Records & Eye Examinations]
+            B --> D[Appointment Scheduling]
+            B --> E[Medical Records & Diagnostics]
             B --> F[Equipment Management]
             B --> G[Billing & Payments]
-            B --> H[Staff Management]
-            B --> I[Insurance Management]
-            B --> J[Lab Tests]
-            B --> K[Surgery Scheduling]
-            B --> L[Reports & Analytics]
-            B --> M[User Profile & Settings]
+            B --> H[Staff Administration]
+            B --> I[Insurance & Claims]
+            B --> J[Reports & Analytics]
+            B --> K[User Profile & Settings]
             
             %% Patient Management Details
             C --> C1[Patient List]
@@ -481,12 +419,9 @@
             D --> D1[Appointment List]
             D1 --> D2[Appointment Detail/Edit]
             
-            %% Medical Records Flow
-            E --> E1[Record List]
-            E1 --> E2["Record Detail: Exams & Lab Tests"]
-            
-            %% Settings Flow
-            M --> M1[User & Role Management]
+            %% Diagnostic Flow
+            E --> E1[Diagnostic Records]
+            E1 --> E2[Record Detail]
       </div>
     </section>
     
@@ -495,45 +430,100 @@
       <h2>Project Timeline</h2>
       <div class="content">
         <p>
-          The implementation of the Eye Hospital Management System is planned over the following phases:
+          The overall project is scheduled to be completed within 20 weeks, aligned with the work plan phases outlined above.
         </p>
-        <ul>
-          <li><strong>Phase 1 (Weeks 1-4):</strong> Requirements gathering, project planning, and system design.</li>
-          <li><strong>Phase 2 (Weeks 12-15):</strong> Development of core modules, UI design, and integration of backend services.</li>
-          <li><strong>Phase 3 (Weeks 1-4):</strong> System testing, user training, and initial deployment.</li>
-          <li><strong>Phase 4 (Weeks 1-3):</strong> Full-scale deployment, post-launch support.</li>
-        </ul>
       </div>
     </section>
     
-    <!-- Investment & Budget -->
+    <!-- Investment & Detailed Cost Summary -->
     <section id="investment">
-      <h2>Investment &amp; Budget</h2>
+      <h2>Investment &amp; Detailed Cost Summary</h2>
       <div class="content">
         <p>
-          The estimated cost for the development and implementation of the system is broken down as follows:
+          The estimated cost for the development and implementation of the Eye Center Hospital Management System is broken down as follows:
         </p>
-        <ul>
-          <li><strong>Development &amp; Design:</strong> $75,000</li>
-          <li><strong>Hardware &amp; Infrastructure:</strong> $20,000</li>
-          <li><strong>Licensing &amp; Integration:</strong> $15,000</li>
-          <li><strong>Training &amp; Support:</strong> $10,000</li>
-        </ul>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Cost (USD)</th>
+          </tr>
+          <tr>
+            <td>Development &amp; Design</td>
+            <td>$75,000</td>
+          </tr>
+          <tr>
+            <td>Hardware &amp; Infrastructure</td>
+            <td>$20,000</td>
+          </tr>
+          <tr>
+            <td>Licensing &amp; Integration</td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td>Training &amp; Support</td>
+            <td>$10,000</td>
+          </tr>
+          <tr>
+            <td><strong>Total Estimated Investment</strong></td>
+            <td><strong>$120,000</strong></td>
+          </tr>
+        </table>
         <p>
-          Total Estimated Investment: <strong>$120,000</strong>
+          All prices are quoted in USD and are exclusive of applicable taxes and import duties. Detailed pricing may be adjusted based on specific hardware and service requirements.
         </p>
       </div>
     </section>
     
-    <!-- Conclusion -->
+    <!-- Terms & Conditions -->
+    <section id="terms">
+      <h2>Terms &amp; Conditions</h2>
+      <div class="content">
+        <p>
+          <strong>Price Terms:</strong> All prices are in USD and exclusive of VAT and import duties. Final costs are subject to change based on additional requirements and scope adjustments.
+        </p>
+        <p>
+          <strong>Implementation:</strong> The project implementation will adhere to the agreed work plan and timeline. Any delays due to external factors will be communicated promptly.
+        </p>
+        <p>
+          <strong>Warranty &amp; Support:</strong> A standard warranty period of 3 months is provided from the system implementation date, covering software bug fixes and technical support. Ongoing maintenance will be available under an annual service agreement.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Agreement -->
+    <section id="agreement">
+      <h2>Agreement</h2>
+      <div class="content">
+        <p>
+          This proposal, along with the attached purchase order and project plan, forms the basis of the agreement between Eye Center Hospital and ProServices. Any modifications to this agreement must be documented in writing and signed by authorized representatives of both parties.
+        </p>
+        <p>
+          <strong>Authorized Signatures:</strong>
+        </p>
+        <p>
+          <em>Vendor:</em> ProServices<br>
+          Signature: _______________________ <br>
+          Name: ____________________________<br>
+          Title: _____________________________
+        </p>
+        <p>
+          <em>Client:</em> Eye Center Hospital<br>
+          Signature: _______________________ <br>
+          Name: ____________________________<br>
+          Title: _____________________________
+        </p>
+      </div>
+    </section>
+    
+    <!-- Conclusion & Next Steps -->
     <section id="conclusion">
       <h2>Conclusion &amp; Next Steps</h2>
       <div class="content">
         <p>
-          This proposal presents a comprehensive design for an advanced Eye Hospital Management System that is user-friendly, secure, and scalable. Our solution will help streamline operations, improve patient care, and reduce overall operational costs.
+          This proposal presents a comprehensive solution tailored to the needs of Eye Center Hospital. Our integrated system is designed to enhance patient care, streamline operations, and improve overall efficiency. We look forward to discussing this proposal further and customizing the solution to meet your unique requirements.
         </p>
         <p>
-          We look forward to discussing this proposal further and tailoring the solution to meet your specific requirements. Please feel free to contact us for additional information or to schedule a demonstration.
+          Please feel free to contact us for additional information or to schedule a detailed demonstration.
         </p>
       </div>
     </section>
@@ -541,7 +531,7 @@
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 ProServices. All rights reserved.</p>
-      <p>Contact us: +962 799 155 039</p>
+      <p>Contact us: ProServices</p>
     </footer>
   </div>
 </body>
