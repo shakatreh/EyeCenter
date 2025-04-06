@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Majd Attely - CV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #333;
+    }
+
+    .cv-container {
+      background: white;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #2a5298;
+    }
+
+    header p {
+      margin: 5px 0;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #2a5298;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .contact a {
+      color: #2a5298;
+      text-decoration: none;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .ref {
+      width: 45%;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .ref {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <header>
+      <h1>Majd Attely</h1>
+      <p><strong>iOS Developer</strong></p>
+      <p>Amman, Jordan | +962 7 98640187 | <a href="mailto:mattely991@gmail.com">mattely991@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/majd-al-attely-752307112/" target="_blank">LinkedIn Profile</a></p>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Passionate iOS Developer with experience delivering robust, user-friendly mobile applications. Strong background in working on e-commerce and healthcare projects using Swift and UIKit/SwiftUI. Excellent at collaborating with cross-functional teams to deliver end-to-end solutions that meet user needs and business goals.</p>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <h3>MCIT | Amman, Jordan <small>(Apr 2018 - Present)</small></h3>
+      <p><strong>iOS Developer</strong></p>
+      <ul>
+        <li>Developed and maintained iOS applications using Swift, UIKit, and SwiftUI.</li>
+        <li>Integrated RESTful APIs and worked on scalable code architecture with MVVM and MVC patterns.</li>
+        <li>Participated in planning, UI/UX discussions, and feature rollout with product teams.</li>
+      </ul>
+      <p><strong>Projects:</strong></p>
+      <ul>
+        <li><strong>Aswaq</strong>: A full-featured e-commerce app for Saudi Arabia built using Swift and UIKit, supporting product browsing, cart management, and payments.</li>
+        <li><strong>i-Makeup</strong>: An iOS shopping platform for beauty products in KSA. Integrated APIs and animations using SwiftUI and coordinated with the design team to enhance user experience.</li>
+        <li><strong>MNGHA</strong>: A patient portal for a major Saudi hospital providing appointment booking, medical records, and notifications. Technologies: Swift, RESTful APIs, local notifications.</li>
+        <li><strong>Quranstore</strong>: E-commerce platform for Islamic products. Focused on UI performance and product catalog display. Built with UIKit and modular architecture.</li>
+      </ul>
+
+      <h3>Freelance iOS Developer <small>(Jan 2014 - May 2015)</small></h3>
+      <ul>
+        <li><strong>Personal Finance Manager</strong>: Budget tracking app allowing users to log expenses, set goals, and view charts. Developed using Swift and Core Data.</li>
+        <li><strong>Local Marketplace App</strong>: iOS app connecting local sellers with buyers. Features include chat, product listings, and reviews. Built using SwiftUI and Firebase.</li>
+      </ul>
+
+      <h3>Amazon | Amman, Jordan <small>(June 2015 - March 2018)</small></h3>
+      <p><strong>Customer Service Representative</strong></p>
+      <ul>
+        <li>Resolved inquiries with 99% positive feedback and retained 45% more customers than average.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Hashemite University</strong>, Jordan — B.Sc. in Computer Science, 2013</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Languages: Swift, Objective-C</li>
+        <li>Frameworks: UIKit, SwiftUI</li>
+        <li>Tools: Xcode, TestFlight, Git</li>
+        <li>Architectures: MVC, MVVM</li>
+        <li>Other: RESTful APIs, Core Data, Notifications, Localization</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <p>Arabic (Native), English (Fluent)</p>
+    </section>
+
+  </div>
+</body>
+</html>
+
