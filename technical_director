@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Belal Shakhatreh – Technical Director | AI & Cloud Strategy Leader</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #0073e6;
+            padding-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .contact {
+            text-align: right;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        .experience h4 {
+            color: #0073e6;
+            margin-bottom: 5px;
+        }
+        .experience p {
+            font-size: 14px;
+            color: #555;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            background: #0073e6;
+            color: #fff;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .custom-section h2 {
+            color: #333;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+        .custom-section ul li {
+            margin-left: 20px;
+            list-style-type: disc;
+            color: #333;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Belal Shakhatreh – Technical Director | AI & Cloud Strategy Leader</h1>
+        <div class="contact">
+            <p>📞 +962 799 155 039</p>
+            <p>✉️ <a href="mailto:shakatreh.belal@gmail.com">shakatreh.belal@gmail.com</a></p>
+            <p>🔗 <a href="https://www.linkedin.com/in/bshakhatreh" target="_blank">LinkedIn</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <p><strong>Technical Director</strong> and former Software Project Manager with 13+ years of experience translating business strategy into technology execution. Proven leadership in managing full lifecycle of complex software projects, including AI-driven systems, NLP integration, and scalable cloud platforms on Azure and AWS. Skilled in aligning engineering execution with business vision, leading diverse teams, and delivering high-impact solutions with a focus on innovation, security, and compliance. Strong communicator and strategic thinker with hands-on background in mobile, backend, and cloud systems.</p>
+    </div>
+
+    <div class="section">
+        <h2>Top Skills</h2>
+        <ul class="skills">
+            <li>Technology Strategy</li>
+            <li>Project Management</li>
+            <li>Agile & Scrum</li>
+            <li>AI & Machine Learning</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>AWS (EC2, S3, Lambda)</li>
+            <li>Azure (Functions, DevOps, AKS)</li>
+            <li>CI/CD (GitHub Actions, Jenkins)</li>
+            <li>Security (GDPR, ISO27001, API Pinning)</li>
+            <li>Cloud Architecture</li>
+            <li>Mobile Management</li>
+            <li>SwiftUI & Swift</li>
+            <li>Kotlin & Flutter</li>
+            <li>Backend (Java, C#, Kotlin)</li>
+            <li>Cross-Functional Leadership</li>
+            <li>System Architecture</li>
+            <li>Risk & Compliance Management</li>
+            <li>Stakeholder Communication</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Languages</h2>
+        <ul>
+            <li>English: Professional Working</li>
+            <li>Arabic: Native or Bilingual</li>
+        </ul>
+    </div>
+
+    <div class="section experience">
+        <h2>Experience</h2>
+
+        <h4>MCIT</h4>
+        <p><strong>Technical Project Manager</strong> (May 2021 - Present)</p>
+        <ul>
+            <li>Acted as bridge between CTO and engineering teams to execute technology strategy aligned with national health initiatives.</li>
+            <li>Oversaw architecture and deployment of AI and NLP-enabled chatbot for hospital systems (ChatGPT, Intercom).</li>
+            <li>Led cross-functional delivery using CI/CD pipelines on Azure DevOps, with secure deployments to AWS cloud environments.</li>
+            <li>Managed compliance readiness, aligning with GDPR and ISO standards for data privacy and security.</li>
+            <li>Supervised recruitment, onboarding, and upskilling of development teams for mobile and backend tracks.</li>
+        </ul>
+
+        <h4>Adaptive TechSoft</h4>
+        <p><strong>Mobile Team Leader</strong> (Oct 2016 - May 2021)</p>
+        <ul>
+            <li>Led mobile architecture for healthcare apps with real-time data, secure login, and hospital integrations.</li>
+            <li>Introduced agile frameworks and mentoring for cross-platform development (Flutter, Kotlin).</li>
+        </ul>
+
+        <h4>Waseela Telecom</h4>
+        <p><strong>Senior Software Developer</strong> (Nov 2012 - Oct 2016)</p>
+        <ul>
+            <li>Delivered software bridging mobile interfaces with telecom and sensor hardware.</li>
+        </ul>
+
+        <h4>Independent Software Consultant</h4>
+        <p>(Jan 2008 - Nov 2012)</p>
+        <ul>
+            <li>Designed and implemented customized business systems for healthcare, education, and government clients.</li>
+        </ul>
+
+        <h4>Jordan Education Initiative</h4>
+        <p><strong>Network Assistant</strong> (Sep 2010 - Mar 2012)</p>
+        <ul>
+            <li>Supported technical deployment and maintenance of school network labs.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <h4>University of Jordan</h4>
+        <p><strong>Bachelor's Degree, Computer Science</strong> (2006 - 2010)</p>
+    </div>
+
+    <div class="section custom-section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Microsoft Certified: Azure Solutions Architect (In Progress)</li>
+            <li>AWS Certified Solutions Architect – Associate (In Progress)</li>
+        </ul>
+    </div>
+
+    <div class="section custom-section">
+        <h2>Project Highlights</h2>
+        <ul>
+            <li><strong>Patient Portal Apps:</strong> Cross-platform apps for hospital systems, with AI chatbot, video consultations, and secure payments.</li>
+            <li><strong>Indoor Navigation System:</strong> BLE-based indoor wayfinding for hospitals with backend CMS.</li>
+            <li><strong>E-commerce Platform:</strong> End-to-end marketplace with admin dashboard and customer tracking.</li>
+            <li><strong>Football Court Booking:</strong> Facility scheduling platform with calendar sync and payment APIs.</li>
+            <li><strong>ERP & Cashvan Apps:</strong> Mobile field sales tools for order entry, syncing with back-office ERP.</li>
+        </ul>
+    </div>
+
+    <div class="section custom-section">
+        <h2>Notable Achievements</h2>
+        <ul>
+            <li>Led AI chatbot implementation using ChatGPT and Intercom across multiple products.</li>
+            <li>Architected secure cloud-native deployment pipelines for mobile & backend projects on Azure and AWS.</li>
+            <li>Modernized legacy hospital systems into scalable mobile platforms used by thousands of patients monthly.</li>
+            <li>Directed hiring and mentorship plans that scaled team productivity by 40% in under a year.</li>
+            <li>Served as the technical liaison for cross-functional delivery involving C-level stakeholders and government entities.</li>
+        </ul>
+    </div>
+
+    <div class="section custom-section">
+        <h2>Methodologies & Collaboration</h2>
+        <ul>
+            <li>Agile & Scrum Practices: Sprint planning, retrospectives, daily standups</li>
+            <li>Technical liaison across CTO, product, client, and delivery teams</li>
+            <li>Tools: Jira, Azure DevOps, GitHub Actions, Slack, MS Teams</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
