@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belal Shakhatreh - Mobile Team Lead CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #0073e6;
+            padding-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .contact {
+            text-align: right;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        .experience h4 {
+            color: #0073e6;
+            margin-bottom: 5px;
+        }
+        .experience p {
+            font-size: 14px;
+            color: #555;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            background: #0073e6;
+            color: #fff;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Belal Shakhatreh</h1>
+        <div class="contact">
+            <p>📞 +962 799 155 039</p>
+            <p>✉️ <a href="mailto:shakatreh.belal@gmail.com">shakatreh.belal@gmail.com</a></p>
+            <p>🔗 <a href="https://www.linkedin.com/in/bshakhatreh" target="_blank">LinkedIn</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <p>
+            Accomplished <strong>Mobile Team Lead</strong> with over <strong>13 years of experience</strong> driving mobile development strategies for <strong>governmental and enterprise clients</strong>. 
+            Expert in <strong>Android, iOS (Swift/SwiftUI), Flutter, and Kotlin Multiplatform (KMP)</strong>, with additional expertise in <strong>backend systems (.NET Core, Spring Boot, SQL Server, Oracle)</strong> and <strong>Firebase</strong>. 
+            Proven leadership in delivering <strong>secure, AI-driven, and scalable solutions</strong> with strong focus on <strong>DevOps, CI/CD, and cybersecurity</strong>.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Top Skills</h2>
+        <ul class="skills">
+            <li>Mobile Team Leadership</li>
+            <li>Kotlin Multiplatform (KMP)</li>
+            <li>Android Development</li>
+            <li>iOS Development (Swift & SwiftUI)</li>
+            <li>Flutter (Dart)</li>
+            <li>AI & ML Integration</li>
+            <li>Cybersecurity in Mobile Apps</li>
+            <li>Government & Enterprise Projects</li>
+            <li>Agile & Project Management</li>
+            <li>Backend Development (.NET Core, Spring Boot)</li>
+            <li>Databases (SQL Server, Oracle DB)</li>
+            <li>Firebase (Auth, Firestore, Cloud Messaging)</li>
+            <li>CI/CD & DevOps (Jenkins, GitHub Actions, GitLab CI)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Languages</h2>
+        <ul>
+            <li>English: Professional Working</li>
+            <li>Arabic: Native or Bilingual</li>
+        </ul>
+    </div>
+
+    <div class="section experience">
+        <h2>Experience</h2>
+
+        <h4>MCIT® (Almanarah Comm & IT Co.)</h4>
+        <p><strong>Mobile Team Lead</strong> (May 2021 - Present)</p>
+        <ul>
+            <li>Leading mobile teams in delivering secure and scalable apps for government and healthcare sectors.</li>
+            <li>Driving adoption of <strong>Kotlin Multiplatform</strong> across iOS and Android projects.</li>
+            <li>Implemented <strong>public key pinning, TLS, and advanced security layers</strong> in healthcare solutions.</li>
+            <li>Designed backend integrations using <strong>.NET Core, Spring Boot, SQL Server, and Oracle</strong>.</li>
+            <li>Leveraged <strong>Firebase</strong> for authentication, push notifications, and analytics.</li>
+            <li>Established <strong>CI/CD pipelines</strong> to automate build, testing, and deployment processes.</li>
+            <li>Led AI-powered initiatives, including predictive analytics and chatbot integration.</li>
+            <li>Collaborated with executives, government stakeholders, and technical teams to align on digital transformation strategies.</li>
+        </ul>
+
+        <h4>Adaptive TechSoft</h4>
+        <p><strong>Mobile Team Leader</strong> (Oct 2016 - May 2021)</p>
+        <ul>
+            <li>Directed development of cross-platform mobile apps for education and professional training institutions.</li>
+            <li>Integrated <strong>Flutter</strong> and native Android/iOS solutions with government-backed services.</li>
+            <li>Delivered secure solutions supported by <strong>Firebase</strong> and backend APIs.</li>
+            <li>Mentored engineers in adopting <strong>KMP</strong> and modern architectures (MVVM, Clean Architecture).</li>
+            <li>Delivered solutions with a strong emphasis on <strong>performance, usability, and security</strong>.</li>
+        </ul>
+
+        <h4>Waseela Telecom</h4>
+        <p><strong>Senior Software Developer</strong> (Nov 2012 - Oct 2016)</p>
+        <ul>
+            <li>Developed secure mobile applications integrated with telecom infrastructure.</li>
+            <li>Collaborated with enterprise and government telecom clients to deliver reliable communication solutions.</li>
+            <li>Worked on <strong>backend APIs</strong> for telecom platforms with strong database integration.</li>
+        </ul>
+
+        <h4>Independent Consultant</h4>
+        <p>(Jan 2008 - Nov 2012)</p>
+        <ul>
+            <li>Delivered tailored mobile, backend, and web solutions for regional clients.</li>
+            <li>Consulted on <strong>mobile strategy, app security, backend integrations, and digital adoption</strong>.</li>
+        </ul>
+
+        <h4>Jordan Education Initiative</h4>
+        <p><strong>Network Assistance</strong> (Sep 2010 - Mar 2012)</p>
+        <ul>
+            <li>Implemented and maintained IT infrastructure in schools under government-led projects.</li>
+            <li>Supported educational initiatives through technology adoption.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <h4>University of Jordan</h4>
+        <p><strong>Bachelor's Degree, Computer Science</strong> (2006 - 2010)</p>
+    </div>
+</div>
+
+</body>
+</html>
